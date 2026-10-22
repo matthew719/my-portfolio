@@ -76,9 +76,10 @@ export const Hero = () => {
 
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                            <Button size="lg">
+                            <Button className="hover:cursor-pointer" size="lg">
                                 Contact Me <ArrowRight className="w-5 h-5" />
-                            </Button>                
+                            </Button>   
+                        
                         <AnimatedBorderButton />
                         </div>
 
