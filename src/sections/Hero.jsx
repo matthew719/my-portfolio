@@ -1,4 +1,4 @@
-import { Button } from "@/components/button";
+import { Button } from "@/components/Button";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
