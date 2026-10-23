@@ -26,7 +26,7 @@ export const Footer = () => {
               MT<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Matthew Enock. All rights reserved.
+              © {currentYear} Matthew Tebandeke. All rights reserved.
             </p>
           </div>
 
