@@ -28,12 +28,15 @@ export const AnimatedBorderButton = ({ children }) => {
                 className="animated-border-path"
                 />
             </svg>
-            <span className="relative z-10 flex items-center justify-center gap-2">
-
-                {children}
-                <Download className="w-5 h-5"/>
-                Download CV
-            </span>
+                <a
+                    href="/Matthew_Tebandeke_CV.pdf"
+                    download="Matthew_Tebandeke_CV.pdf"
+                    className="relative z-10 flex items-center justify-center gap-2"
+                    >
+                    {children}
+                    <Download className="w-5 h-5" />
+                    Download CV
+                </a>
         </button>
     );
 };

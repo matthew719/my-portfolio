@@ -69,7 +69,7 @@ export const Hero = () => {
                                 className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200"
                                 >
                                 Hi, I'm Matthew Enock, a web developer specializing in
-                                React and Next.js. I build scalable, performant web
+                                React and Node.js. I build scalable, performant web
                                 applications that users love.
                             </p>
                         </div>
