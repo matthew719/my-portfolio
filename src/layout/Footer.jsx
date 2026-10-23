@@ -1,9 +1,9 @@
 import { FaGithub, FaLinkedin, FaXTwitter, FaHeart } from "react-icons/fa6";
 
 const socialLinks = [
-  { icon: FaGithub, href: "#", label: "GitHub" },
-  { icon: FaLinkedin, href: "#", label: "LinkedIn" },
-  { icon: FaXTwitter, href: "#", label: "X" },
+  { icon: FaGithub, href: "https://github.com/matthew719?tab=repositories", label: "GitHub" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/matthew-tebandeke-248901378/?isSelfProfile=true", label: "LinkedIn" },
+  { icon: FaXTwitter, href: "https://x.com/tem_matthew", label: "X" },
 ];
 
 const footerLinks = [
@@ -23,7 +23,7 @@ export const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              ME<span className="text-primary">.</span>
+              MT<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
               © {currentYear} Matthew Enock. All rights reserved.
@@ -48,6 +48,7 @@ export const Footer = () => {
             {socialLinks.map((social) => (
               <a
                 key={social.label}
+                target="_blank"
                 href={social.href}
                 aria-label={social.label}
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"

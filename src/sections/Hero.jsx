@@ -68,7 +68,7 @@ export const Hero = () => {
                             <p 
                                 className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200"
                                 >
-                                Hi, I'm Matthew Enock — a web developer specializing in
+                                Hi, I'm Matthew Enock, a web developer specializing in
                                 React and Next.js. I build scalable, performant web
                                 applications that users love.
                             </p>
@@ -77,7 +77,14 @@ export const Hero = () => {
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
                             <Button className="hover:cursor-pointer" size="lg">
-                                Contact Me <ArrowRight className="w-5 h-5" />
+                               <a 
+                                href="https://wa.me/0763466787" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                class="whatsapp-button"
+                                >
+                                Contact Me
+                                </a> <ArrowRight className="w-5 h-5" />
                             </Button>   
                         
                         <AnimatedBorderButton />
@@ -86,13 +93,15 @@ export const Hero = () => {
                         {/* Social Links */}
                         <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                             <span className="text-sm text-muted-foreground">Follow me: </span>
-                            {[{icon: FaGithub, href:"#"}, 
-                            {icon: FaLinkedin, href:"#"}, 
-                            {icon: FaXTwitter, href:"#"}
+                            
+                            {[{icon: FaGithub, href:"https://github.com/matthew719?tab=repositories"}, 
+                            {icon: FaLinkedin, href:"https://www.linkedin.com/in/matthew-tebandeke-248901378/?isSelfProfile=true"}, 
+                            {icon: FaXTwitter, href:"https://x.com/tem_matthew"}
                         ].map((social, idx) => (
                                 <a 
                                     key={idx} 
                                     href={social.href} 
+                                    target="_blank"
                                     className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                                 >
                                     {<social.icon className="w-5 h-5"/>}
